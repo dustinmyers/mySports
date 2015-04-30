@@ -1,0 +1,48 @@
+<section layout="row" flex>
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+	  <md-content layout-padding ng-controller="LeftCtrl" >
+			<md-button ng-click="close()" class="md-primary" hide-gt-md>
+	      Close Sidenav Left
+	    </md-button>
+	    <h2 class="md-display-2" layout-margin>My Games</h2>
+	    <div layout="column" layout-fill layout-align="top center" ng-repeat='event in games' flex='55'>
+				<md-whiteframe class="md-whiteframe-z1" layout-fill>
+				  <md-content layout-padding>
+				    <h4 layout-margin class='med-primary'><span><h2>{{ event.sport }} game</h2></span>Where: {{ event.game.location }}<br/>Day: {{ event.game.day | date : "EEE, MMM d" }}<br/>Time: {{ event.game.time }}</h4>
+				  </md-content>
+			  </md-whiteframe>
+		  </div>
+	  </md-content>
+	</md-sidenav>
+	<md-content flex layout-padding style='margin:0 10%' ng-controller="LeftCtrl">
+		<md-button ng-click="toggleLeft()" class="md-primary" hide-gt-md>
+      Toggle left
+    </md-button>
+		<div layout='row' layout='space-between center'>
+			<h1 class="md-display-2">Scheduled Games</h1>
+	    <span flex></span>
+	    <!-- <md-select ng-model="filter" placeholder="Search by sport" layout-margin>
+	      <md-option ng-value="sport.name" ng-repeat="sport in sports | date : format: mediumDate">{{sport.name}}</md-option>
+	    </md-select> -->
+	    <md-button ng-click="newGame()" class="md-primary" layout-margin>
+	      Add a New Game
+	    </md-button>
+		</div>
+	 	<div layout="column" layout-fill layout-align="top center" ng-repeat='event in games' flex='55'>
+			<md-whiteframe class="md-whiteframe-z1" layout-fill>
+				  <md-toolbar class="md-primary" layout="row" layout-align="space-between center" layout-padding>
+				    <h1 class="md-toolbar-tools">
+				    	{{ event.sport }}
+				    </h1>
+				    <md-button ng-click="addMyGame()" class="md-primary md-hue-1" layot-margin>
+				      ADD
+				    </md-button>
+				  </md-toolbar>
+				  <md-content layout-padding layout="row" layout-align="space-between center">
+				    <h2 layout-margin class='med-primary'>Game at {{ event.game.location }}, at {{ event.game.time }}</h2>
+				    <h2 layout-margin class='med-primary'>{{ event.game.day | date : 'EEE, MMM d' }}</h2>
+				  </md-content>
+		  </md-whiteframe>
+	  </div>
+	</md-content>
+</section>

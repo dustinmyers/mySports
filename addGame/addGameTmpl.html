@@ -1,0 +1,36 @@
+<div layout="column" class='addGame'>
+  <md-whiteframe class="md-whiteframe-z1" layout>
+  	<div layout="column" layout-fill>
+		  <md-toolbar class="md-primary" >
+		    <h1 class="md-toolbar-tools">
+		      Schedule a New Game
+		    </h1>
+		  </md-toolbar>
+		  <md-content layout-padding>
+		    <form name="userForm">
+		      <div layout layout-sm="column" layout-md="column" layout-margin>
+		        <md-input-container flex>
+		          <label>Location</label>
+		          <input ng-model="game.location">
+		        </md-input-container>
+		        <md-input-container flex>
+		          <label>Time</label>
+		          <input ng-model="game.time">
+		        </md-input-container>
+		        <md-input-container flex>
+		          <label>Date</label>
+		          <input type='date' ng-model="game.date">
+		        </md-input-container>
+		      </div>
+		    </form>
+		    <div layout='row' layout-sm="column" layout-md="column" layout-margin>
+	        <md-select ng-model="sport" placeholder="Pick a Sport..." >
+		        <md-option ng-value="sport.name" ng-repeat="sport in sports">{{sport.name}}</md-option>
+			    </md-select>
+		    	<span flex></span>
+		    	<md-button layout margin layout='center' class="md-primary" ng-click='newGame()'>Schedule Game</md-button>
+		    </div>
+		  </md-content>
+		</div>
+  </md-whiteframe>
+</div>

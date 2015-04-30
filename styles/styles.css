@@ -1,0 +1,68 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+
+.startup {
+	background-image: url('http://b.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/03/3006808-poster-1280-order-court.jpg');
+	background-size: cover;
+	height: 935px;
+	width: auto;
+	background-attachment: fixed;
+}
+
+.startup-feed {
+	width: 35%;
+	height: 60%;
+	text-align: center;
+	font-size: 35px;
+	color: #455A64;
+}
+
+.login {
+	margin-top: 20px;
+	width: 30%;
+	opacity: 1;
+	height: 30%;
+	background-color: white;
+}
+
+.register-bar {
+	height: 100px;
+	width: 100%;
+	background-color: #455A64;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-left: 50px;
+}
+
+.register {
+	background-image: url('http://www.healthyhabitsmatter.com/wp-content/uploads/2014/07/Dollarphotoclub_55851250.jpg');
+	background-size: cover;
+	height: 1650px;
+	width: auto;
+	background-attachment: fixed;
+}
+.registration {
+	width: 90%;
+	opacity: .9;
+}
+
+.homeContainer {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.addGame {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.homeFeed {
+	width: 55%;
+	margin: 0 auto;
+}
