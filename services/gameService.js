@@ -12,9 +12,13 @@ app.service('gameService', function(fb, $firebaseArray) {
 
 	this.getGames = function() {
 		return new Firebase(fb.url + '/games/');
-	}
+	};
 
-	var user
+	this.myGames = function() {
+		return new Firebase(fb.url + '/users/' + user.uid + '/events/');
+	};
+
+	var user;
 
 	this.addNewGame = function(game, sport, uid) {
 		game.day = game.date.toISOString();

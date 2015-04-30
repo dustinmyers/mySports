@@ -10,8 +10,11 @@ angular.module('sportsApp')
   var ref = 'https://right-now-sports.firebaseio.com/',
     users = $firebaseArray(new Firebase(ref + '/users'))
 
-  $scope.games = $firebaseArray(gamesRef)
-  console.log($scope.games)
+  $scope.games = $firebaseArray(gamesRef);
+  console.log($scope.games);
+
+  // $scope.myGames = $firebaseArray(myGamesRef);
+  // console.log($scope.myGames);
 
   $scope.sports = gameService.sports;
 	

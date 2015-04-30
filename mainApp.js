@@ -24,7 +24,10 @@ angular.module('sportsApp', ['firebase', 'ngRoute', 'ngMaterial'])
 				    },
 				    gamesRef: function(gameService) {
 				    	return gameService.getGames();
-				    }
+				    },
+				    // myGamesRef: function(gameService) {
+				    // 	return gameService.myGames();
+				    // }
 				}
 			})
 			.when('/startup', {

@@ -8,7 +8,7 @@
 	    <div layout="column" layout-fill layout-align="top center" ng-repeat='event in games' flex='55'>
 				<md-whiteframe class="md-whiteframe-z1" layout-fill>
 				  <md-content layout-padding>
-				    <h4 layout-margin class='med-primary'><span><h2>{{ event.sport }} game</h2></span>Where: {{ event.game.location }}<br/>Day: {{ event.game.day | date : "EEE, MMM d" }}<br/>Time: {{ event.game.time }}</h4>
+				    <h4 layout-margin class='med-primary'><span><h2>{{ event.sport }} game</h2></span>{{ event.game.location }}<br/>{{ event.game.day | date : "MMM d" }}<br/>{{ event.game.time }}</h4>
 				  </md-content>
 			  </md-whiteframe>
 		  </div>
@@ -28,9 +28,9 @@
 	      Add a New Game
 	    </md-button>
 		</div>
-	 	<div layout="column" layout-fill layout-align="top center" ng-repeat='event in games' flex='55'>
+	 	<div layout="column" layout-fill layout-align="top center" ng-repeat='event in games | orderBy : "day" ' flex='55'>
 			<md-whiteframe class="md-whiteframe-z1" layout-fill>
-				  <md-toolbar class="md-primary" layout="row" layout-align="space-between center" layout-padding>
+				  <md-toolbar style='height:30px' class="md-primary" layout="row" layout-align="space-between center" layout-padding>
 				    <h1 class="md-toolbar-tools">
 				    	{{ event.sport }}
 				    </h1>

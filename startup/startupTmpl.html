@@ -1,31 +1,29 @@
-<div class="startup" layout='column' layout-align='center end' flex>
-	<div "login" layout-margin>
-		<div layout='column' layout-align='start center' layout-margin class='registration' flex>
-		  <md-content class='registration' layout-padding layout='column' layout-align-md='column' layout-align-sm='column'>
-		    <md-input-container layout-margin>
-		        <label>Your name</label>
-		        <input ng-model="details.name">
-		    </md-input-container>
-		    <md-input-container layout-margin>
-		        <label>Username</label>
-		        <input ng-model='details.username'>
-		    </md-input-container>
-		    <md-input-container layout-margin>
-		      	<label>Email</label>
-		    	<input type='email' ng-model="details.email">
-		    </md-input-container>
-		    <md-input-container layout-margin>
-		     	<label>Password</label>
-		      	<input ng-model='details.password'>
-		    </md-input-container>
-		    <md-input-container layout-margin>
-		     	<label>Confirm password</label>
-		      	<input ng-model='confirmPassword'>
-		    </md-input-container>
-				<md-button ng-click='register()' class="md-primary ">Register</md-button>
-			</md-content>
-	  </div>
-	</div>
+<div class="startup" layout='column' layout-align='end center' flex>
+	<div layout='column' layout-align='start center' layout-margin style="margin-bottom:3%">
+	  <md-content class='registration' layout-padding layout='row' layout-align-md='column' layout-align-sm='column'>
+	    <md-input-container layout-margin>
+	        <label>Your name</label>
+	        <input ng-model="details.name">
+	    </md-input-container>
+	    <md-input-container layout-margin>
+	        <label>Username</label>
+	        <input ng-model='details.username'>
+	    </md-input-container>
+	    <md-input-container layout-margin>
+	      	<label>Email</label>
+	    	<input type='email' ng-model="details.email">
+	    </md-input-container>
+	    <md-input-container layout-margin>
+	     	<label>Password</label>
+	      	<input ng-model='details.password'>
+	    </md-input-container>
+	    <md-input-container layout-margin>
+	     	<label>Confirm password</label>
+	      	<input ng-model='confirmPassword'>
+	    </md-input-container>
+			<md-button ng-click='register()' class="md-primary ">Register</md-button>
+		</md-content>
+  </div>
 </div>
 
 

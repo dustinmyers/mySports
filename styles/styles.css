@@ -21,33 +21,25 @@ html, body {
 	color: #455A64;
 }
 
-.login {
-	margin-top: 20px;
-	width: 30%;
-	opacity: 1;
-	height: 30%;
-	background-color: white;
-}
-
 .register-bar {
-	height: 100px;
+	height: 250px;
 	width: 100%;
 	background-color: #455A64;
 	color: #FFFFFF;
-	padding-top: 10px;
+	padding-top: 170px;
 	padding-left: 50px;
 }
 
 .register {
 	background-image: url('http://www.healthyhabitsmatter.com/wp-content/uploads/2014/07/Dollarphotoclub_55851250.jpg');
 	background-size: cover;
-	height: 1650px;
+	height: 1050px;
 	width: auto;
 	background-attachment: fixed;
 }
 .registration {
-	width: 90%;
-	opacity: .9;
+	width: 100%;
+	opacity: .8;
 }
 
 .homeContainer {
